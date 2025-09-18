@@ -1,4 +1,4 @@
-#include "/home/fyodor/Working Directory/Git_v2/DataStructures/src/HeaderFiles/LinkedList.h"
+//#include "/home/fyodor/Working Directory/Git_v2/DataStructures/src/HeaderFiles/LinkedList.h"
 
 template<typename T>
 LinkedList<T>::LinkedList() : head(nullptr) {}

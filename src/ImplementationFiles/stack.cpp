@@ -1,4 +1,4 @@
-#include "/home/fyodor/Working Directory/Git_v2/DataStructures/src/HeaderFiles/stack.h"
+//#include "/home/fyodor/Working Directory/Git_v2/DataStructures/src/HeaderFiles/stack.h"
 
 // Default Constructor
 template <typename T>
