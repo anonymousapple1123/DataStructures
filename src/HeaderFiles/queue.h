@@ -22,6 +22,5 @@ public:
     T peek() const;
 };
 
-#include "queue.cpp" // Include the implementation file
 
 #endif // QUEUE_H
