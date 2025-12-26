@@ -1,17 +1,15 @@
-//#include "/home/fyodor/Working Directory/Git_v2/DataStructures/src/HeaderFiles/stack.h"
-
-// Default Constructor
+#include "stack.h"
 template <typename T>
-Stack<T>::Stack() : 
-    array(new T[DEFAULT_CAPACITY]), 
-    topIndex(-1), 
+Stack<T>::Stack() :
+    array(new T[DEFAULT_CAPACITY]),
+    topIndex(-1),
     capacity(DEFAULT_CAPACITY) {}
 
 // Parameterized Constructor
 template <typename T>
-Stack<T>::Stack(int initialCapacity) : 
-    array(new T[initialCapacity]), 
-    topIndex(-1), 
+Stack<T>::Stack(int initialCapacity) :
+    array(new T[initialCapacity]),
+    topIndex(-1),
     capacity(initialCapacity) {
     if (initialCapacity <= 0) {
         throw std::invalid_argument("Capacity must be positive");
@@ -20,9 +18,9 @@ Stack<T>::Stack(int initialCapacity) :
 
 // Copy Constructor
 template <typename T>
-Stack<T>::Stack(const Stack& other) : 
-    array(new T[other.capacity]), 
-    topIndex(other.topIndex), 
+Stack<T>::Stack(const Stack& other) :
+    array(new T[other.capacity]),
+    topIndex(other.topIndex),
     capacity(other.capacity) {
     // Deep copy elements
     for (int i = 0; i <= topIndex; ++i) {
@@ -61,7 +59,7 @@ Stack<T>::~Stack() {
 template <typename T>
 void Stack<T>::resize(int newCapacity) {
     T* newArray = new T[newCapacity];
-    
+
     // Copy existing elements
     for (int i = 0; i <= topIndex; ++i) {
         newArray[i] = array[i];

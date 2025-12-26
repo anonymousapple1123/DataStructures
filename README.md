@@ -1,2 +1,2 @@
 # DataStructures
- Data structure implementation using C/C++.
+ Data structure implementation using C++.

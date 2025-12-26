@@ -1,5 +1,4 @@
 #include <stdexcept>
-//#include "/home/fyodor/Working Directory/Git_v2/DataStructures/src/HeaderFiles/queue.h"
 
 template <typename T>
 Queue<T>::Queue() : front(nullptr), rear(nullptr) {}

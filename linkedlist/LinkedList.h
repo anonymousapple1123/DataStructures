@@ -10,7 +10,7 @@ struct Node{
   T data;
   Node* next;
   Node* prev;
-  Node(T data) : data(data), next(nullptr), prev(nullptr) {}  
+  Node(T data) : data(data), next(nullptr), prev(nullptr) {}
 };
 
 template<typename T>
@@ -26,7 +26,7 @@ void display() const ;
 ~LinkedList();
 
 private:
-   Node* head;      
+   Node* head;
 
 };
 
