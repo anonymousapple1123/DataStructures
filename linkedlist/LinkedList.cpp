@@ -1,4 +1,3 @@
-//#include "/home/fyodor/Working Directory/Git_v2/DataStructures/src/HeaderFiles/LinkedList.h"
 
 template<typename T>
 LinkedList<T>::LinkedList() : head(nullptr) {}
@@ -59,11 +58,11 @@ void LinkedList<T>::remove(int index) {
     if (index == 0) {
         Node<T>* temp = head;
         head = head->next;
-        
+
         if (head != nullptr) {
             head->prev = nullptr;
         }
-        
+
         delete temp;
         return;
     }
