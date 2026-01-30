@@ -1,0 +1,23 @@
+A simple function that return the number of ways to reach a nth stair.
+
+function climbStairs(n){
+if(n==1) return 1;
+if(n==2) return 2;
+return climbStairs(n-1) + climbStairs(n-2);
+}
+//Its slow and due to dublicate calculations.
+// O(2^n)
+
+DP - Store the n ways in a hashmap before returning
+
+Memoization - Save the result after computing it such that it doesnt need to compile again.
+
+//generalized code
+const memo = {};
+function climbStairs (n){
+if (n in memeo) return memo[n];
+if (n<= 2) return n;
+const result = climbStairs(n-1) + climbStairs(n-2);
+memo[n] = result;
+return result;
+}
