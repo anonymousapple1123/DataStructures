@@ -21,3 +21,21 @@ const result = climbStairs(n-1) + climbStairs(n-2);
 memo[n] = result;
 return result;
 }
+
+// Time complexity - O(n)
+
+
+___________________________________________________________________________________________
+
+Using Non recursive method
+
+function climbStairs(n) {
+const ways = [];
+ways[1] = 1;
+ways[2] = 2;
+
+for (let i = 3; i<= n; i++){
+ways[i] = ways[i -1] + ways[i-2];
+}
+return ways[n];
+}
