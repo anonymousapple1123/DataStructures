@@ -7,10 +7,10 @@ void swap(double& num1, double& num2){
     num1 = num2;
     num2 = temp;
 }
-void selection_sort (std::vector<double> arr){
-    int size = arr.size();
+void selection_sort (std::vector<double> &arr){
+    int n = arr.size();
 
-    for{int i = 0; i<=n; ++i}{
+    for(int i = 0; i<=n; ++i){
         int min_idx = i;
 
         for(int j = i+1; j<=n; ++j){
@@ -24,8 +24,11 @@ void selection_sort (std::vector<double> arr){
     }
 }
 
-int main(){
-    std::vector arr{1,3,4,2,5};
-    selection_sort(arr);
-    return 0;
-}
+// int main(){
+//     std::vector<double> arr{31,43,4,2,5,6,3,9,9,876,7,4,2,433,456,33,56};
+//     selection_sort(arr);
+//     for(auto i : arr){
+//         std::cout<<"> "<<i<<std::endl;
+//     }
+//     return 0;
+// }
